@@ -1,0 +1,103 @@
+2014-07-13T17:22:14.805946+00:00 heroku[run.2077]: Starting process with command `python manage.py syncdb`
+2014-07-13T17:22:16.529226+00:00 heroku[run.2077]: Process exited with status 1
+2014-07-13T17:23:50+00:00 heroku[slug-compiler]: Slug compilation started
+2014-07-13T17:24:08+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-07-13T17:24:07.900854+00:00 heroku[api]: Deploy 73da981 by praveenjindal62@gmail.com
+2014-07-13T17:24:07.900854+00:00 heroku[api]: Release v13 created by praveenjindal62@gmail.com
+2014-07-13T17:24:09.438784+00:00 heroku[web.1]: State changed from crashed to starting
+2014-07-13T17:24:14.477522+00:00 app[web.1]: 2014-07-13 17:24:14 [2] [INFO] Listening at: http://0.0.0.0:55462 (2)
+2014-07-13T17:24:14.477611+00:00 app[web.1]: 2014-07-13 17:24:14 [2] [INFO] Using worker: sync
+2014-07-13T17:24:14.487121+00:00 app[web.1]: 2014-07-13 17:24:14 [7] [INFO] Booting worker with pid: 7
+2014-07-13T17:24:14.476765+00:00 app[web.1]: 2014-07-13 17:24:14 [2] [INFO] Starting gunicorn 18.0
+2014-07-13T17:24:15.150225+00:00 heroku[web.1]: State changed from starting to up
+2014-07-13T17:24:16.771342+00:00 heroku[router]: at=info method=GET path="/" host=evening-lowlands-1818.herokuapp.com request_id=e265041f-8f9c-4fde-a3bb-f1cf7ac845f9 fwd="107.20.101.120" dyno=web.1 connect=1 service=137 status=500 bytes=431
+2014-07-13T17:24:16.769658+00:00 app[web.1]: 2014-07-13 17:24:16 [7] [ERROR] Error handling request
+2014-07-13T17:24:16.769662+00:00 app[web.1]: Traceback (most recent call last):
+2014-07-13T17:24:16.769665+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/wo
+rkers/sync.py", line 131, in handle_request
+2014-07-13T17:24:16.769667+00:00 app[web.1]:     respiter = self.wsgi(environ, resp.start_response)
+2014-07-13T17:24:16.769670+00:00 app[web.1]:     return self.application(environ, start_response)
+2014-07-13T17:24:16.769668+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/dj_static.py", line 59, in __call__
+2014-07-13T17:24:16.769672+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 187, in __call__
+2014-07-13T17:24:16.769677+00:00 app[web.1]:     mw_class = import_by_path(middleware_path)
+2014-07-13T17:24:16.769675+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 47, in load_middleware
+2014-07-13T17:24:16.769679+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/utils/module_loading.py", line 31, in import_by_path
+2014-07-13T17:24:16.769674+00:00 app[web.1]:     self.load_middleware()
+2014-07-13T17:24:16.769680+00:00 app[web.1]:     error_prefix, module_path, class_name))
+2014-07-13T17:24:16.769682+00:00 app[web.1]: ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+2014-07-13T17:24:13.546999+00:00 heroku[web.1]: Starting process with command `gunicorn MediHome.wsgi`
+2014-07-13T17:24:21.547265+00:00 heroku[api]: Starting process with command `python manage.py syncdb` by praveenjindal62@gmail.com
+2014-07-13T17:24:26.110228+00:00 heroku[run.3938]: Starting process with command `python manage.py syncdb`
+2014-07-13T17:24:26.064164+00:00 heroku[run.3938]: Awaiting client
+2014-07-13T17:24:26.135943+00:00 heroku[run.3938]: State changed from starting to up
+2014-07-13T17:24:55.414650+00:00 heroku[run.3938]: Process exited with status 0
+2014-07-13T17:24:55.422595+00:00 heroku[run.3938]: State changed from up to complete
+2014-07-13T17:27:23.860029+00:00 heroku[api]: Starting process with command `python manage.py shell` by praveenjindal62@gmail.com
+2014-07-13T17:27:29.455328+00:00 heroku[run.1653]: State changed from starting to up
+2014-07-13T17:27:29.250318+00:00 heroku[run.1653]: Awaiting client
+2014-07-13T17:27:29.311083+00:00 heroku[run.1653]: Starting process with command `python manage.py shell`
+2014-07-13T17:29:04.420737+00:00 heroku[run.1653]: Process exited with status 0
+2014-07-13T17:29:04.432596+00:00 heroku[run.1653]: State changed from up to complete
+2014-07-13T17:29:40.887954+00:00 heroku[router]: at=info method=GET path="/" host=evening-lowlands-1818.herokuapp.com request_id=678542db-54de-4efd-9c86-9979d29bb758 fwd="121.245.32.81" dyno=web.1 connect=1 service=2 status=500 bytes=533
+2014-07-13T17:29:40.888606+00:00 app[web.1]: Traceback (most recent call last):
+2014-07-13T17:29:40.888620+00:00 app[web.1]:     mw_class = import_by_path(middleware_path)
+2014-07-13T17:29:40.888609+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 131, in handle_request
+2014-07-13T17:29:40.888614+00:00 app[web.1]:     return self.application(environ, start_response)
+2014-07-13T17:29:40.888619+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 47, in load_middleware
+2014-07-13T17:29:40.888610+00:00 app[web.1]:     respiter = self.wsgi(environ, resp.start_response)
+2014-07-13T17:29:40.888624+00:00 app[web.1]:     error_prefix, module_path, class_name))
+2014-07-13T17:29:40.888600+00:00 app[web.1]: 2014-07-13 17:29:40 [7] [ERROR] Error handling request
+2014-07-13T17:29:40.888617+00:00 app[web.1]:     self.load_middleware()
+2014-07-13T17:29:40.888626+00:00 app[web.1]: ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+2014-07-13T17:29:40.888612+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/dj_static.py", line 59, in __call__
+2014-07-13T17:29:40.888615+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 187, in __call__
+2014-07-13T17:29:40.888622+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/utils/module_loading.py", line 31, in import_by_path
+2014-07-13T17:29:49.574307+00:00 heroku[router]: at=info method=GET path="/main/" host=evening-lowlands-1818.herokuapp.com request_id=124b19b8-015f-4370-9086-3c3a2dcc84a9 fwd="121.245.32.81" dyno=web.1 connect=0 service=2 status=500 bytes=538
+2014-07-13T17:29:49.575162+00:00 app[web.1]: 2014-07-13 17:29:49 [7] [ERROR] Error handling request
+2014-07-13T17:29:49.575172+00:00 app[web.1]: Traceback (most recent call last):
+2014-07-13T17:29:49.575175+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 131, in handle_request
+2014-07-13T17:29:49.575178+00:00 app[web.1]:     respiter = self.wsgi(environ, resp.start_response)
+2014-07-13T17:29:49.575180+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/dj_static.py", line 59, in __call__
+2014-07-13T17:29:49.575182+00:00 app[web.1]:     return self.application(environ, start_response)
+2014-07-13T17:29:49.575185+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 187, in __call__
+2014-07-13T17:29:49.575187+00:00 app[web.1]:     self.load_middleware()
+2014-07-13T17:29:49.575190+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 47, in load_middleware
+2014-07-13T17:29:49.575191+00:00 app[web.1]:     mw_class = import_by_path(middleware_path)
+2014-07-13T17:29:49.575194+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/utils/module_loading.py", line 31, in import_by_path
+2014-07-13T17:29:49.575196+00:00 app[web.1]:     error_prefix, module_path, class_name))
+2014-07-13T17:29:49.575198+00:00 app[web.1]: ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+2014-07-13T17:33:49.807633+00:00 heroku[api]: Starting process with command `python manage.py runserver` by praveenjindal62@gmail.com
+2014-07-13T17:33:53.596378+00:00 heroku[run.3889]: State changed from starting to up
+2014-07-13T17:33:53.422668+00:00 heroku[run.3889]: Awaiting client
+2014-07-13T17:33:53.456828+00:00 heroku[run.3889]: Starting process with command `python manage.py runserver`
+2014-07-13T17:34:05.694712+00:00 heroku[router]: at=info method=GET path="/main/" host=evening-lowlands-1818.herokuapp.com request_id=df489517-06e6-4c2b-b1a1-13c804e8d6a3 fwd="121.245.32.81" dyno=web.1 connect=16 service=22 status=500 bytes=565
+2014-07-13T17:34:05.668890+00:00 app[web.1]: 2014-07-13 17:34:05 [7] [ERROR] Error handling request
+2014-07-13T17:34:05.668917+00:00 app[web.1]: Traceback (most recent call last):
+2014-07-13T17:34:05.668919+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 131, in handle_request
+2014-07-13T17:34:05.668928+00:00 app[web.1]:     self.load_middleware()
+2014-07-13T17:34:05.668929+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 47, in load_middleware
+2014-07-13T17:34:05.668921+00:00 app[web.1]:     respiter = self.wsgi(environ, resp.start_response)
+2014-07-13T17:34:05.668926+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 187, in __call__
+2014-07-13T17:34:05.668923+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/dj_static.py", line 59, in __call__
+2014-07-13T17:34:05.668924+00:00 app[web.1]:     return self.application(environ, start_response)
+2014-07-13T17:34:05.668935+00:00 app[web.1]:     error_prefix, module_path, class_name))
+2014-07-13T17:34:05.668931+00:00 app[web.1]:     mw_class = import_by_path(middleware_path)
+2014-07-13T17:34:05.668932+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/utils/module_loading.py", line 31, in import_by_path
+2014-07-13T17:34:05.668936+00:00 app[web.1]: ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
+2014-07-13T17:35:27.565872+00:00 heroku[run.3889]: State changed from up to complete
+2014-07-13T17:35:27.556848+00:00 heroku[run.3889]: Process exited with status 0
+2014-07-13T17:35:42.634128+00:00 heroku[router]: at=info method=GET path="/admin" host=evening-lowlands-1818.herokuapp.com request_id=524630bf-4e1c-4e53-b8db-f7263bfd8879 fwd="121.245.32.81" dyno=web.1 connect=8 service=7 status=500 bytes=538
+2014-07-1
+3T17:35:42.630321+00:00 app[web.1]: 2014-07-13 17:35:42 [7] [ERROR] Error handling request
+2014-07-13T17:35:42.630331+00:00 app[web.1]:     respiter = self.wsgi(environ, resp.start_response)
+2014-07-13T17:35:42.630332+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/dj_static.py", line 59, in __call__
+2014-07-13T17:35:42.630369+00:00 app[web.1]:     mw_class = import_by_path(middleware_path)
+2014-07-13T17:35:42.630365+00:00 app[web.1]:     self.load_middleware()
+2014-07-13T17:35:42.630371+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/utils/module_loading.py", line 31, in import_by_path
+2014-07-13T17:35:42.630326+00:00 app[web.1]: Traceback (most recent call last):
+2014-07-13T17:35:42.630367+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/base.py", line 47, in load_middleware
+2014-07-13T17:35:42.630329+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 131, in handle_request
+2014-07-13T17:35:42.630334+00:00 app[web.1]:     return self.application(environ, start_response)
+2014-07-13T17:35:42.630372+00:00 app[web.1]:     error_prefix, module_path, class_name))
+2014-07-13T17:35:42.630336+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/handlers/wsgi.py", line 187, in __call__
+2014-07-13T17:35:42.630375+00:00 app[web.1]: ImproperlyConfigured: Module "django.contrib.auth.middleware" does not define a "SessionAuthenticationMiddleware" attribute/class
