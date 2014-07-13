@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+DATABASES['default'] = dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
@@ -59,12 +59,12 @@ WSGI_APPLICATION = 'MediHome.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'MediHomedb',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', 
+        'NAME': 'd3rhpeas2v43pc',
+        'USER': 'mqhfeutvzdllli',
+        'PASSWORD': 'j9xjyrNFhDwnvv2_iCQKD_HKzB',
+        'HOST': 'ec2-54-197-241-95.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
