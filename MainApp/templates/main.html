@@ -6,7 +6,7 @@
 	var query=document.getElementById("query").value;
 	if(query!="")
 	{
-	window.location="http://"+location.hostname+":8000/search/"+query;
+	location.href=="/search/"+query;
 	return false;
 	 //document.getElementById("search_form").submit();
 	}
