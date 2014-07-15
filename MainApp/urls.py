@@ -3,6 +3,7 @@ from MainApp import views
 urlpatterns = patterns(
 	'',
     url(r'^$',views.HomePage,name="main"),
+	url(r'^main/$',views.HomePage,name="main"),
 	url(r'^search/(?P<query>[A-Za-z0-9]+)/$',views.SearchPage,name="search" ),
 	url(r'^product/(?P<id>[A-Za-z0-9]+)/$',views.ProductPage,name="search" ),
 	url(r'^cookie/$',views.CheckCookie,name="cookie" ),
